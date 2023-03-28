@@ -1,0 +1,24 @@
+.ant-table-wrapper .ant-table-thead >tr>th{
+    background-color: rgb(12, 53, 92);
+    color: white;
+  }
+  .ant-table-cell::before{
+  display: none;
+  }
+  
+  @media only screen and (max-width: 815px)  {
+  .Table{
+    overflow-x: scroll;
+  }
+  }
+  /* .listview-table  .ant-table-row{
+    background: #e6e9ef !important;
+  } */
+  .list-link{
+    font-weight: var(--font-normal);
+    font-size: var(--large-font-size);
+  }
+  .rating-text{
+    color: #253D55;
+    font-size: 0.625rem;
+  }

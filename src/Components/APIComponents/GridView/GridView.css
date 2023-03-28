@@ -1,0 +1,66 @@
+.Card-Content {
+	text-align: left;
+}
+.Card_content_header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.Card-Title {
+	font-style: normal;
+	font-weight: var(--font-bold);
+	font-size: 1.188rem;
+	line-height: 20px;
+	color: #253d55;
+}
+.Card-subheading {
+	font-size: var(--smaller-font-size);
+	font-weight: var(--font-normal);
+	color: #253d55;
+	opacity: 0.6;
+	margin-bottom: var(--mb-0-5);
+}
+.card-api-context {
+	font-size: var(--small-font-size);
+	line-height: 18px;
+}
+.card-version {
+	margin-bottom: var(--mb-0-5);
+}
+.GridViewCards {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 1rem;
+	row-gap: 1rem;
+}
+.Grid-Card {
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+@media only screen and (min-width: 601px) {
+	.Grid-Card {
+		/* min-width: 320px; */
+		min-width: 32%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.Grid-Card {
+		width: 100%;
+	}
+}
+.Grid-Card-rating {
+	display: flex;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 354px) and (min-width: 320px) {
+	.Card-Title {
+		font-size: medium;
+	}
+}
+@media only screen and (max-width: 319px) {
+	.Card-Title {
+		font-size: small;
+	}
+}

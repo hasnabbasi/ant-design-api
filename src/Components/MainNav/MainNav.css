@@ -1,0 +1,22 @@
+.Main-Nav-Header{
+display: flex;
+padding: 10px;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 1rem;
+margin-top: 0.5rem;
+align-items: center;
+}
+.userImage{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-select .ant-select-selector{
+    align-items: end !important;
+    display: flex;
+}
+.user-select .ant-select-selection-item{
+font-weight: var(--font-medium) !important;
+font-family: var(--body-font) !important;
+color: var(--primary-color) !important;
+}

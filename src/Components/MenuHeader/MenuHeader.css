@@ -1,0 +1,55 @@
+
+.Menu-Header-Container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+flex-wrap: wrap;
+}
+.Menu-Header-Inner{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ViewChangeIcon{
+    font-size:2rem;
+    color: var(--primary-color-20);
+    cursor: pointer;
+}
+.viewChangeactive{
+    color: var(--primary-color);
+}
+.ListViewIcons{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.API-icon{
+    font-size: 1.5rem;
+    color: white;
+    background: var(--primary-color);
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.6rem;
+}
+.total-api{
+    display: flex;
+    flex-direction: column;
+}
+.api-title{
+    font-size: var(--h3-font-size-bold);
+    font-weight: 500;
+}
+
+.totalapi-span{
+    color: var(--primary-color);
+    font-weight: var(--font-normal);
+    font-size: var(--smal-font-size);
+    line-height: 16px;
+}
+.main-header .ant-select-selector{
+    border-color: var(--secondary-color) !important;
+
+  }
