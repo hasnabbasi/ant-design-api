@@ -1,53 +1,71 @@
-@media only screen and (min-width: 992px)  {
-    .ant-layout .ant-layout-sider{
-      min-width: 260px !important;
-      text-align: left;
-    }
-    .ant-menu-item{
-      padding-left: 20px !important;
-    }
-    .ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline{
-        margin: 0px 4px !important;
-        border-radius: 0px 0px 5px 5px !important;
-        background: #173a5a !important;
-        transition: all 0.4s;
-    }
-    .ant-menu-submenu-open > .ant-menu-submenu-title{
-      padding-left: 10px !important;
-      margin-bottom: -2px;
-        border-radius: 5px 5px 0px 0px !important;
-        background: #173a5a !important;
-        transition: all 0.4s;
-    
-    }
-    .ant-menu-submenu-open{
+@media only screen and (min-width: 992px) {
+  .ant-layout .ant-layout-sider {
+    min-width: 260px !important;
+    text-align: left;
+  }
+
+  .ant-menu-item {
+    padding-left: 20px !important;
+  }
+
+  .ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+    margin: 0px 4px !important;
+    border-radius: 0px 0px 5px 5px !important;
+    background: #173a5a !important;
+    transition: all 0.4s;
+  }
+
+  .ant-menu-submenu-open>.ant-menu-submenu-title {
+    padding-left: 10px !important;
+    margin-bottom: -2px;
+    border-radius: 5px 5px 0px 0px !important;
+    background: #173a5a !important;
+    transition: all 0.4s;
+
+  }
+
+  .ant-menu-submenu-open {
     margin-left: 10px;
     margin-right: 10px;
     transition: all 0.4s;
-    
-    }
+
   }
-.button-div{
+}
+
+.button-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem;
 }
-.api-btn{
+
+.api-btn {
   width: 50%;
   background: none !important;
   border: none !important;
   color: aliceblue;
 }
-.active{
+
+.active {
   background: aliceblue !important;
   color: black;
   font-weight: 400;
   font-size: small;
 }
-  /* .ant-menu-item-selected > .ant-menu-item-icon{
-    color: blue !important;
-  }
-  .ant-menu-item-selected{
-    background: inherit !important;
-  } */
+
+.logo {
+
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+
+}
+
+.icon {
+  padding: 1rem 0;
+  margin: 1rem;
+  text-Align: center;
+  color: white;
+  font-Size: 2rem;
+}
