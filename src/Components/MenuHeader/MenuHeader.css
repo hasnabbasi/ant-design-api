@@ -46,7 +46,7 @@ flex-wrap: wrap;
 .totalapi-span{
     color: var(--primary-color);
     font-weight: var(--font-normal);
-    font-size: var(--smal-font-size);
+    font-size: var(--small-font-size);
     line-height: 16px;
 }
 .main-header .ant-select-selector{

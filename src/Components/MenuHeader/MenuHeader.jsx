@@ -1,12 +1,18 @@
 import React, {useState} from 'react';
 import {SlackOutlined, CaretDownOutlined} from '@ant-design/icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCode, faFileArrowDown, faPrint, faFileLines, faList} from '@fortawesome/free-solid-svg-icons';
 import './MenuHeader.css';
-import {Button, Modal} from 'antd';
+// import {Button, Modal, Divider} from 'antd';
+import {Card, Button, Divider} from 'antd';
+
+import {faList} from "@fortawesome/free-solid-svg-icons";
 
 const MenuHeader = ({handleView, view}) => {
-    const [open, setOpen] = useState(false);
+    const [showCard, setShowCard] = useState(false);
+
+    const handleButtonClick = () => {
+        setShowCard(!showCard);
+    }
 
     return (
         <div className="Menu-Header-Container">
@@ -19,10 +25,47 @@ const MenuHeader = ({handleView, view}) => {
             </div>
 
             <div className="Menu-Header-Inner">
-                <Button style={{backgroundColor:'#16375A',color:"white"}} onClick={() => setOpen(true)}>
-                    Create APIs
-                    <CaretDownOutlined />
-                </Button>
+
+
+                <div style={{position: 'relative', zIndex: 1}}>
+                    <Button style={{backgroundColor: '#16375A', color: "white"}} onClick={handleButtonClick}>
+                        Create APIs
+                        <CaretDownOutlined/>
+                    </Button>
+                    {showCard && (
+                        <Card style={{position: 'absolute', top: '130%', right: '0%', width: 'auto'}}>
+                            <div style={{display: "flex" ,width:'auto'}}>
+                                <div>
+                                REST API <a href="#">Link</a>
+                                </div>
+                                <Divider type="vertical"/>
+                                <div>
+                                    REST API <a href="#">Link</a>
+                                </div>
+                                <Divider type="vertical"/>
+                                <div>
+                                    REST API <a href="#">Link</a>
+                                </div>
+                                <Divider type="vertical"/>
+                                <div>
+                                    REST API <a href="#">Link</a>
+                                </div>
+                                <Divider type="vertical"/>
+                                <div>
+                                    REST API <a href="#">Link</a>
+                                </div>
+                                <Divider type="vertical"/>
+                                <div>
+                                    REST API <a href="#">Link</a>
+                                </div>
+                                <Divider type="vertical"/>
+                                <div>
+                                    REST API <a href="#">Link</a>
+                                </div>
+                            </div>
+                        </Card>
+                    )}
+                </div>
                 <FontAwesomeIcon
 
                     icon={faList}
@@ -48,15 +91,6 @@ const MenuHeader = ({handleView, view}) => {
                     }}
                 />
 
-                <Modal
-                    title="Create APIs"
-                    centered
-                    visible={open}
-                    onCancel={() => setOpen(false)}
-                    footer={null}
-                >
-                    <p>Modal content goes here.</p>
-                </Modal>
             </div>
         </div>
     );
